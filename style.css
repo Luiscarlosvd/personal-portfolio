@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 48px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.menu-button {
+  border: 0;
+  margin-right: 5%;
+  background-color: #fff;
+}
