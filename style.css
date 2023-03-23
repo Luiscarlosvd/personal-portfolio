@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .header {
   display: flex;
   flex-direction: row-reverse;
@@ -25,7 +29,7 @@
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .color-blue {
@@ -34,27 +38,26 @@
 
 .headline {
   margin: 0 8%;
+  text-align: center;
 }
 
-#principal-title {
-  font-family: 'Inter', sans-serif;
+.principal-title {
+  font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
   text-align: center;
+  line-height: 52px;
   padding-top: 50px;
   padding-bottom: 10px;
 }
 
-#principal-title span {
+.principal-title span {
   color: #36b37e;
 }
 
 .headline p {
-  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
   padding-bottom: 15px;
 }
 
@@ -64,4 +67,92 @@
   margin: 0 auto;
   justify-content: space-between;
   list-style: none;
+}
+
+.display-button {
+  padding: 12px;
+  border-radius: 60%;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  margin-top: 60px;
+}
+
+.works-section {
+  display: grid;
+  grid-template-areas: 1fr / 6fr;
+  column-gap: 10px;
+  text-align: center;
+  margin: 0 8%;
+}
+
+@media (min-width: 768px) {
+  .works-section {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.individual-works {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #ebf0ee;
+  width: 100%;
+  height: 474px;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  border-radius: 2.5%;
+  border: 1.5px solid #d0d9d4;
+  list-style: none;
+}
+
+.description-works {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  justify-content: space-around;
+  background-color: #ffff;
+  height: 240px;
+  border-radius: 4%;
+}
+
+.description-works h2 {
+  color: #172b4d;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.work-languages {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 12px;
+  list-style: none;
+}
+
+.work-languages li {
+  background-color: #ebf0ee;
+  border-radius: 5%;
+  padding: 12px 8px;
+  margin: 0 5px;
+}
+
+.green-button {
+  background-color: #36b37e;
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  border: none;
+  border-radius: 5%;
+  padding: 12px;
+  width: 122px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.green-button:hover {
+  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.green-button:active {
+  background-color: #008552;
 }
