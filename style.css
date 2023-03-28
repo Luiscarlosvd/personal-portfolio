@@ -1,11 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.color-blue {
+  color: #172b4d;
+}
+
+.margin {
+  margin: 0 8%;
+}
+
+/* Header */
 
 .header {
   display: flex;
@@ -24,19 +35,13 @@ body {
   width: 30px;
 }
 
+/* Headline Section */
+
 .main {
   background-image: url(img/headline-background.png);
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 80px;
-}
-
-.color-blue {
-  color: #172b4d;
-}
-
-.margin {
-  margin: 0 8%;
 }
 
 .headline {
@@ -78,6 +83,8 @@ body {
   border: 1px solid #dfe1e6;
   margin-top: 60px;
 }
+
+/*  Works Section */
 
 .works-section {
   display: grid;
@@ -156,6 +163,8 @@ body {
   background-color: #008552;
 }
 
+/* About Me Section */
+
 .aboutme-section {
   background-image: url(img/illustration-aboutme-mobile.png);
   background-repeat: no-repeat;
@@ -197,7 +206,33 @@ body {
 .aboutme-languages li {
   background-color: #fff;
   color: #36b37e;
-  border-radius: 17%;
+  border-radius: 10px;
   padding: 12px 10px;
   margin: 4px 3px;
+}
+
+/* Form Section */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 1.5em;
+  
+}
+
+.form input {
+  border-radius: 5px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #D0D9D4;
+  padding-inline: 15px;
+}
+
+.form textarea {
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #D0D9D4;
+  height: 114px;
+  padding: 15px;
 }
