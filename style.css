@@ -96,17 +96,22 @@ body {
 .icons-headline {
   display: flex;
   max-width: 200px;
-  margin: 0 auto;
+  margin: 6px auto;
   justify-content: space-between;
   list-style: none;
 }
 
 .display-button {
-  padding: 12px;
+  padding: 15px;
   border-radius: 60%;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   margin-top: 70px;
+  cursor: pointer;
+}
+
+.display-button:hover {
+  background-color: #e9eaeb;
 }
 
 @media (min-width: 768px) {
@@ -124,15 +129,9 @@ body {
 .works-section {
   display: grid;
   grid-template-areas: 1fr / 6fr;
-  row-gap: 20px;
-  column-gap: 10px;
+  row-gap: 30px;
+  column-gap: 20px;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .works-section {
-    grid-template-columns: auto auto auto;
-  }
 }
 
 .individual-works {
@@ -150,6 +149,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   background-color: #ffff;
   height: 240px;
   border-radius: 4%;
@@ -160,11 +160,11 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
+  margin: 0 8%;
 }
 
 .work-languages {
   display: flex;
-  justify-content: space-between;
   font-weight: 600;
   font-size: 12px;
   list-style: none;
@@ -174,7 +174,7 @@ body {
   background-color: #ebf0ee;
   border-radius: 5%;
   padding: 12px 8px;
-  margin: 0 5px;
+  margin: 0 7px;
 }
 
 .green-button {
@@ -196,6 +196,18 @@ body {
 
 .green-button:active {
   background-color: #008552;
+}
+
+@media (min-width: 768px) {
+    .works-section {
+      grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1146px) {
+    .works-section {
+      grid-template-columns: auto auto auto;
+    }
 }
 
 /* About Me Section */
