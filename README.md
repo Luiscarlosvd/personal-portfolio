@@ -50,8 +50,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Added Header and Headline Section**
-- **Using feature branches to work much better**
-- **Knowing more about flexbox**
+- **Added Portfolio, Contact and About Me Sections**
+- **Responsive Web Design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,8 +130,8 @@ Open index.html using live server extension in Visual Studio Code.
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] Add My projects.
-- [ ] Add Footer.
-- [ ] Add Images, Styling and more.
+- [ ] Add JavaScript functionalities.
+- [ ] Add more styling.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
