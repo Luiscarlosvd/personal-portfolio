@@ -24,20 +24,44 @@ body {
   height: 48px;
   width: 98%;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 .menu-button {
   border: 0;
   margin-right: 10%;
-  background-color: #fff;
+  background-color: unset;
   margin-top: 15px;
   width: 30px;
 }
 
+@media (max-width: 768px) {
+    nav a {
+      display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+      display: none;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #344563;
+      font-weight: 600;
+      padding: 0.2rem 1rem;
+    }
+
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
 /* Headline Section */
 
-.main {
+.background-headline {
   background-image: url(img/headline-background.png);
   background-repeat: no-repeat;
   background-size: 100%;
