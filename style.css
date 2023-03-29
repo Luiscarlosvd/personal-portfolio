@@ -93,6 +93,12 @@ body {
   padding-bottom: 15px;
 }
 
+@media (min-width: 768px) {
+    .paragraphs {
+      line-height: 32px;
+    }
+}
+
 .icons-headline {
   display: flex;
   max-width: 200px;
@@ -128,7 +134,6 @@ body {
 
 .works-section {
   display: grid;
-  grid-template-areas: 1fr / 6fr;
   row-gap: 30px;
   column-gap: 20px;
   text-align: center;
@@ -183,7 +188,7 @@ body {
   font-weight: 400;
   font-size: 17px;
   border: none;
-  border-radius: 5%;
+  border-radius: 4px;
   padding: 12px;
   width: 122px;
   margin: 0 auto;
@@ -213,11 +218,28 @@ body {
 /* About Me Section */
 
 .aboutme-section {
-  background-image: url(img/illustration-aboutme-mobile.png);
+  background-image: url(img/illustration-aboutme-mobile-left.png);
   background-repeat: no-repeat;
-  height: 100%;
-  padding-bottom: 15%;
+  background-position: bottom left;
   text-align: center;
+}
+
+.aboutme-section .margin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 23rem;
+  margin-bottom: 8%;
+}
+
+.background-right-aboutme {
+  background-image: url(img/illustration-aboutme-mobile-right.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.aboutme-section button {
+  width: 153px;
 }
 
 .individual-aboutme-cards {
@@ -256,6 +278,42 @@ body {
   border-radius: 10px;
   padding: 12px 10px;
   margin: 4px 3px;
+}
+
+@media (min-width: 886px) {
+    .aboutme-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .individual-aboutme-cards {
+      max-width: 357px;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutme-section {
+      background-image: url(img/illustration-about-me-left-desktop.png);
+    }
+
+    .background-right-aboutme {
+      background-image: url(img/illustration-about-me-right-desktop.png);
+    }
+
+    .aboutme-section .margin {
+      margin: 3% 20%;
+    }
+
+    .aboutme-cards {
+      max-width: 1196px;
+      margin: 0 auto;
+    }
+
+    .individual-aboutme-cards {
+      margin: 1% 1%;
+    }
 }
 
 /* Form Section */
