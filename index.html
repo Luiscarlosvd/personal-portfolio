@@ -11,36 +11,41 @@
     <title>Luis Valera's Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <button type="button" class="menu-button"><img src="img/Union.png" alt="menu-image"></button>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="headline margin">
-            <h1 class="principal-title color-blue"> Hey there.<br>
-                I'm Luis Carlos.<br>
-                <span>I'm a software developer</span>
-            </h1>
-            <p class="color-blue paragraphs">I can help you build a product , feature or website Look through some of my work and
-                experience!
-                If you like what you see and have a project you need coded,
-                don't hesitate to contact me.</p>
-            <ul class="icons-headline">
-                <li><a href="https://twitter.com/Luiscarlosvd29"><img src="img/twitter.png" alt="twitter-icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/luis-valera-6a5749267/"><img src="img/linkedin.png"
-                            alt="linkedin-icon"></a></li>
-                <li><a href="#"><img src="img/medium.png" alt="medium-icon"></a></li>
-                <li><a href="https://github.com/Luiscarlosvd"><img src="img/github.png" alt="github-icon"></a></li>
-                <li><a href="#"><img src="img/angellist.png" alt="angellist-icon"></a></li>
-            </ul>
-
-            <button type="button" class="display-button"><img src="img/arrow.png" alt="arrow-button"></button>
-        </section>
-    </main>
-
-    <section>
+    <div class="background-headline">
+        <header class="header">
+            <nav>
+                <button type="button" class="menu-button"><img src="img/Union.png" alt="menu-image"></button>
+                <a href="#works">Portfolio</a>
+                <a href="#aboutme">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="headline margin">
+                <h1 class="principal-title color-blue"> Hey there.<br>
+                    I'm Luis Carlos.<br>
+                    <span>I'm a software developer</span>
+                </h1>
+                <p class="color-blue paragraphs">I can help you build a product , feature or website Look through some of my
+                    work and
+                    experience!
+                    If you like what you see and have a project you need coded,
+                    don't hesitate to contact me.</p>
+                <ul class="icons-headline">
+                    <li><a href="https://twitter.com/Luiscarlosvd29"><img src="img/twitter.png" alt="twitter-icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/luis-valera-6a5749267/"><img src="img/linkedin.png"
+                                alt="linkedin-icon"></a></li>
+                    <li><a href="#"><img src="img/medium.png" alt="medium-icon"></a></li>
+                    <li><a href="https://github.com/Luiscarlosvd"><img src="img/github.png" alt="github-icon"></a></li>
+                    <li><a href="#"><img src="img/angellist.png" alt="angellist-icon"></a></li>
+                </ul>
+    
+                <button type="button" class="display-button"><img src="img/arrow.png" alt="arrow-button"></button>
+            </section>
+        </main>
+    </div>
+    <section id="works">
         <h1 class="principal-title color-blue">My Recent Works<br><img src="img/Indicator.png" alt="indicator"></h1>
         <ul class="works-section margin">
             <li class="individual-works">
@@ -118,15 +123,17 @@
         </ul>
     </section>
 
-    <section class="aboutme-section">
-        <div class="margin">
-            <h1 class="principal-title color-blue">About me</h1>
-            <p class="color-blue paragraphs">I can help you build a product , feature or website Look through some of my
-                work and
-                experience!
-                If you like what you see and have a project you need coded,
-                don't hesitate to contact me.</p>
-            <button type="button" class="green-button">See Project</button>
+    <section id="aboutme" class="aboutme-section">
+        <div class="background-right-aboutme">
+            <div class="margin">
+                <h1 class="principal-title color-blue">About me</h1>
+                <p class="color-blue paragraphs">I can help you build a product , feature or website Look through some of my
+                    work and
+                    experience!
+                    If you like what you see and have a project you need coded,
+                    don't hesitate to contact me.</p>
+                <button type="button" class="green-button">Get my resume</button>
+            </div>
         </div>
     </section>
     <div class="margin">
@@ -166,19 +173,21 @@
         </ul>
     </div>
 
-    <section class="background-contact">
-        <div class="margin">
-            <h1 class="principal-title color-blue">I'm always interested in hearing about new projects,
-                so if you'd like to chat please get in touch.</h1>
+    <section id="contact" class="background-contact-right">
+        <div class="background-contact-left">
+            <div class="margin contact-display">
+                <h1 class="principal-title color-blue">I'm always interested in hearing about new projects,
+                    so if you'd like to chat please get in touch.</h1>
         
-            <form action="https://formspree.io/f/mvonwopd" method="POST" class="form">
-                <input id="name" type="text" placeholder="Full name" name="name" maxlength="30" required />
-                <input id="email" type="email" placeholder="Email address" name="email" required />
-                <textarea placeholder="Hey I’d like to connect to..." maxlength="500" name="message" required></textarea>
-                <button class="green-button" type="submit">Get in touch</button>
-            </form>
+                <form action="https://formspree.io/f/mvonwopd" method="POST" class="form">
+                    <input id="name" type="text" placeholder="Full name" name="name" maxlength="30" required />
+                    <input id="email" type="email" placeholder="Email address" name="email" required />
+                    <textarea placeholder="Hey I’d like to connect to..." maxlength="500" name="message" required></textarea>
+                    <button class="green-button" type="submit">Get in touch</button>
+                </form>
         
-            <a class="link-form paragraphs color-blue" href="mailto:lc26cr7@gmail.com">lc26cr7@gmail.com</a>
+                <a class="link-form paragraphs color-blue" href="mailto:lc26cr7@gmail.com">lc26cr7@gmail.com</a>
+            </div>
         </div>
     </section>
     
