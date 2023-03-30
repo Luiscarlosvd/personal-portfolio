@@ -153,6 +153,7 @@ body {
   width: 122px;
   margin: 0 auto;
   cursor: pointer;
+  transform: translate(2.1rem, 2ex);
 }
 
 .green-button:hover {
