@@ -94,10 +94,6 @@ nav a:hover {
   transition: transform 0.25s;
 }
 
-.icons-headline li:hover {
-  transform: scale(1.2);
-}
-
 .display-button {
   padding: 15px;
   border-radius: 60%;
@@ -134,10 +130,6 @@ nav a:hover {
   transition: transform 0.5s;
 }
 
-.individual-works:hover {
-  transform: scale(1.05);
-}
-
 .description-works {
   display: flex;
   flex-direction: column;
@@ -168,6 +160,10 @@ nav a:hover {
   border-radius: 5%;
   padding: 12px 8px;
   margin: 0 7px;
+}
+
+.individual-works:hover {
+  transform: scale(1.05);
 }
 
 .green-button {
@@ -322,13 +318,17 @@ footer {
   padding: 1rem;
 }
 
+.icons-headline li:hover {
+  transform: scale(1.2);
+}
+
 /* Desktop */
 
 @media (min-width: 768px) {
   .menu-button {
     display: none;
   }
-  
+
   .header {
     flex-direction: column;
     justify-content: center;
@@ -396,7 +396,7 @@ footer {
     justify-content: space-around;
     align-items: center;
   }
-  
+
   .individual-aboutme-cards {
     max-width: 357px;
   }
@@ -411,23 +411,23 @@ footer {
     gap: 4%;
     padding: 2rem 0 15rem 0;
   }
-  
+
   .form {
     display: flex;
     flex-direction: column;
     width: 60%;
   }
-  
+
   .contact-display h1 {
     padding-top: 10px;
     width: 40%;
   }
-  
+
   .link-form {
     display: none;
   }
 }
-  
+
 @media (min-width: 1276px) {
   .contact-display {
     margin: 0 auto 2% auto;
