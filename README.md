@@ -59,7 +59,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Comming soon...
+> You can check my website [here](https://luiscarlosvd.github.io/personal-portfolio/). 🙌
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +109,7 @@ Open index.html using live server extension in Visual Studio Code.
 
 ### Deployment
 
-> You can check my website [here](https://luiscarlosvd.github.io/personal-portfolio/). 🙌
+> Coming Soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
