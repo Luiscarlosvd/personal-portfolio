@@ -140,7 +140,7 @@ nav a:hover {
   border-radius: 4%;
 }
 
-.description-works h2 {
+.description-works h3 {
   color: #172b4d;
   font-size: 24px;
   font-weight: 600;
@@ -230,8 +230,11 @@ nav a:hover {
   list-style: none;
 }
 
-.individual-aboutme-cards h2 {
+.individual-aboutme-cards h3 {
   margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #172b4d;
 }
 
 .aboutme-languages {
@@ -418,7 +421,7 @@ footer {
     width: 60%;
   }
 
-  .contact-display h1 {
+  .contact-display h2 {
     padding-top: 10px;
     width: 40%;
   }
