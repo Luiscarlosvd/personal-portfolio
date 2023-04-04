@@ -123,6 +123,12 @@ Open index.html using live server extension in Visual Studio Code.
 - Twitter: [@Luiscarlosvd29](https://twitter.com/Luiscarlosvd29)
 - LinkedIn: [Luis Valera](https://www.linkedin.com/in/luis-valera-6a5749267/)
 
+👤 **Nylbert Victor**
+
+- GitHub: [@redmarverick](https://github.com/redmarverick)
+- Twitter: [@MarverickRed]("https://twitter.com/MarverickRed)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nylbert-victor-397951120/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
