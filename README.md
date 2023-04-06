@@ -27,7 +27,7 @@
 
 # 📖 My Portfolio <a name="about-project"></a>
 
-> This is My Project Portfolio and here you are going to see amazing projects do it by me and some collaboration projects coming soon.
+> This is My Project Portfolio and here you are going to see amazing projects do it by me and some collaboration projects coming soon. You can see the video about my updated portfolio [here](https://www.loom.com/share/14ddcc1d261e4567bf889fa1d33c0ec4). 😄
 
 ## 🛠 Built With <a name="built-with"></a>
 
