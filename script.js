@@ -28,7 +28,7 @@ let myWorks = [
         id: "works-1",
     },
     {
-        Name: "Multi-Post Stories Gain+Glory",
+        Name: " whales in alaska",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
         image: "./img/portfolio-image.png",
         technologies: "<li>Ruby on Rails</li>\n<li>JavaScript</li>\n<li>CSS</li>\n<li>HTML</li>",
