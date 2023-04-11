@@ -280,6 +280,7 @@ nav li a {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1em;
   width: 8.2em;
   height: 48px;
 }
