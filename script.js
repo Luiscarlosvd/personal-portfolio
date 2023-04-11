@@ -94,8 +94,22 @@ for (let i = 0; i < openWorks.length; i++) {
     openWorks[i].addEventListener("click", function () {
 
         card.innerHTML += `
-        <div class="works-window">
-            <h1>${myWorks[i].Name}</h1>
+        <div class="background-gradient">
+            <div class="works-window margin">
+                <div class="works-window-elements">
+                    <div class="button-quit">
+                        <button class="quit-button-works" alt="quit button"><img src="./img/quit-works.png" alt="quit button image"></button>
+                    </div>
+                    <img src="${myWorks[i].image}" alt="Image of the portfolio project">
+                    <h1>${myWorks[i].Name}</h1>
+                    <ul class="work-languages">${myWorks[i].technologies}</ul>
+                    <p class="paragraphs">${myWorks[i].description}</p>
+                    <div class="buttons-works-window">
+                        <a href="${myWorks[i].linkLive}" class="green-button">See Live  <img src="./img/live-source-icon.png"></a>
+                        <a href="${myWorks[i].linkSource}" class="green-button">See Source  <img src="./img/see-live-icon.png"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
     });
