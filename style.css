@@ -213,6 +213,74 @@ nav li a {
   background-color: #008552;
 }
 
+.works-window {
+  position: fixed;
+  top: 1em;
+  padding: 1em;
+  border-radius: 8px;
+  height: 95%;
+  background-color: #fff;
+}
+
+.works-window-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  height: 100%;
+  overflow: scroll;
+  gap: 0.7em;
+}
+
+.works-window-elements h1 {
+  font-size: 32px;
+}
+
+.works-window-elements img{
+  max-height: 30em;
+}
+
+.background-gradient {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(193,199,208,0.9360994397759104) 100%, rgba(0,0,0,1) 100%);
+}
+
+.button-quit {
+  display: flex;
+  justify-content: right;
+}
+
+.quit-button-works {
+  border: none;
+  border-radius: 4px;
+  background-color: #ebecf0;
+  align-items: center;
+  padding: 0.7em;
+}
+
+.quit-button-works:hover {
+  background-color: #c1c7d0;
+}
+
+.works-window-elements::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons-works-window {
+  display: flex;
+  max-width: 20em;
+  background-color: #fff;
+}
+
+.buttons-works-window button {
+  display: flex;
+  justify-content: space-around;
+  width: 8em;
+  height: 48px;
+}
+
 /* About Me Section */
 
 .aboutme-section {

@@ -82,8 +82,21 @@ myWorks.map((x) => {
             <div class="description-works">
                 <h3>${x.Name}</h3>
                 <ul class="work-languages">${x.technologies}</ul>
-                <button type="button" class="green-button" id="${x.id}">See Project</button>
+                <button type="button" class="green-button button-works" id="${x.id}">See Project</button>
             </div>
         </li>
     `;
 });
+
+const openWorks = document.querySelectorAll('.button-works');
+
+for (let i = 0; i < openWorks.length; i++) {
+    openWorks[i].addEventListener("click", function () {
+
+        card.innerHTML += `
+        <div class="works-window">
+            <h1>${myWorks[i].Name}</h1>
+        </div>
+    `;
+    });
+}
