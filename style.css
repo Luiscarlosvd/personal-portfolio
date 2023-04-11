@@ -235,7 +235,7 @@ nav li a {
   font-size: 32px;
 }
 
-.works-window-elements img{
+.works-window-elements img {
   max-height: 30em;
 }
 
@@ -245,7 +245,7 @@ nav li a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, rgba(193,199,208,0.9360994397759104) 100%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(193, 199, 208, 0.9360994397759104) 100%, rgba(0, 0, 0, 1) 100%);
 }
 
 .button-quit {
