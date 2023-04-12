@@ -130,3 +130,31 @@ for (let i = 0; i < openWorks.length; i += 1) {
     });
   });
 }
+
+function validateEmail(email) {
+  const emailLower = email.toLowerCase();
+
+  if (emailLower === email) {
+    return true;
+  }
+  return false;
+}
+
+const form = document.querySelector('#contact-form');
+
+function errorMessageEmail() {
+  const message = form.querySelector('small');
+  message.innerText = 'ERROR: Invalid email, must be in all lowercase.';
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const validEmail = validateEmail(form.email.value);
+
+  if (validEmail === true) {
+    form.submit();
+  } else {
+    errorMessageEmail();
+  }
+});

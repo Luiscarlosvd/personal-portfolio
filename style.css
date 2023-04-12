@@ -409,6 +409,11 @@ nav li a {
   padding: 1rem 0;
 }
 
+.error {
+  color: #ca2929;
+  font-size: 15px;
+}
+
 textarea:focus,
 input:focus {
   outline: none;
