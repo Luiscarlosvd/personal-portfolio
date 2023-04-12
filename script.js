@@ -101,6 +101,9 @@ const workspopup = document.getElementById('works-popup');
 
 for (let i = 0; i < openWorks.length; i += 1) {
   openWorks[i].addEventListener('click', () => {
+    const body = document.querySelector('body');
+    body.classList.add('overflowH');
+
     workspopup.innerHTML += `
         <div class="background-gradient">
             <div class="works-window margin">
@@ -113,14 +116,17 @@ for (let i = 0; i < openWorks.length; i += 1) {
                     <ul class="work-languages">${myWorks[i].technologies}</ul>
                     <p class="paragraphs">${myWorks[i].description}</p>
                     <div class="buttons-works-window">
-                        <a href="${myWorks[i].linkLive}" class="green-button">See Live  <img src="./img/live-source-icon.png"></a>
-                        <a href="${myWorks[i].linkSource}" class="green-button">See Source  <img src="./img/see-live-icon.png"></a>
+                        <a href="${myWorks[i].linkLive}" class="green-button">See Live  <img src="./img/see-live-icon.png"></a>
+                        <a href="${myWorks[i].linkSource}" class="green-button">See Source  <img src="./img/live-source-icon.png"></a>
                     </div>
                 </div>
             </div>
         </div>
     `;
     const quitButton = document.getElementById('quit-button');
-    quitButton.addEventListener('click', () => { workspopup.innerHTML = ''; });
+    quitButton.addEventListener('click', () => {
+      body.classList.remove('overflowH');
+      workspopup.innerHTML = '';
+    });
   });
 }
