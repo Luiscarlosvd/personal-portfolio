@@ -145,7 +145,7 @@ const form = document.querySelector("#contact-form");
 
 function errorMessageEmail() {
     const message = form.querySelector('small');
-    message.innerText = "";
+    message.innerText = "ERROR: Invalid email, must be in all lowercase.";
 }
 
 form.addEventListener("submit", function(event) {
