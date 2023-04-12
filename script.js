@@ -132,30 +132,29 @@ for (let i = 0; i < openWorks.length; i += 1) {
 }
 
 function validateEmail(email) {
-    const emailLower = email.toLowerCase()
+  const emailLower = email.toLowerCase();
 
-    if(emailLower ===  email) {
-        return true;
-    }else{
-        return false;
-    }
+  if (emailLower === email) {
+    return true;
+  }
+  return false;
 }
 
-const form = document.querySelector("#contact-form");
+const form = document.querySelector('#contact-form');
 
 function errorMessageEmail() {
-    const message = form.querySelector('small');
-    message.innerText = "ERROR: Invalid email, must be in all lowercase.";
+  const message = form.querySelector('small');
+  message.innerText = 'ERROR: Invalid email, must be in all lowercase.';
 }
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-    let validEmail = validateEmail(form.email.value);
+  const validEmail = validateEmail(form.email.value);
 
-    if(validEmail == true) {
-        form.submit();
-    }else{
-        errorMessageEmail();
-    }
+  if (validEmail === true) {
+    form.submit();
+  } else {
+    errorMessageEmail();
+  }
 });
