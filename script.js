@@ -130,3 +130,32 @@ for (let i = 0; i < openWorks.length; i += 1) {
     });
   });
 }
+
+function validateEmail(email) {
+    const emailLower = email.toLowerCase()
+
+    if(emailLower ===  email) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+const form = document.querySelector("#contact-form");
+
+function errorMessageEmail() {
+    const message = form.querySelector('small');
+    message.innerText = "";
+}
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let validEmail = validateEmail(form.email.value);
+
+    if(validEmail == true) {
+        form.submit();
+    }else{
+        errorMessageEmail();
+    }
+});
