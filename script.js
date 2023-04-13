@@ -149,9 +149,9 @@ function errorMessageEmail() {
 
 const nameForm = document.getElementById('name');
 const emailForm = document.getElementById('email');
-const textareaForm = document.getElementById('text-area');
+const textarea = document.getElementById('text-area');
 
-let forminfo = { nameForm: '', emailForm: '', textareaForm: '' };
+let forminfo = { nameForm: '', emailForm: '', textarea: '' };
 
 const getUserInfo = () => {
   if (localStorage.getItem('forminfo')) {
@@ -163,14 +163,14 @@ const getUserInfo = () => {
 window.onload = () => {
   nameForm.value = getUserInfo().nameForm;
   emailForm.value = getUserInfo().emailForm;
-  textareaForm.value = getUserInfo().textareaForm;
+  textarea.value = getUserInfo().textarea;
 };
 
 form.addEventListener('change', () => {
   forminfo = {
     nameForm: nameForm.value,
     emailForm: emailForm.value,
-    textareaForm: textareaForm.value,
+    textarea: textarea.value,
   };
   localStorage.setItem('forminfo', JSON.stringify(forminfo));
 });
