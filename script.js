@@ -147,6 +147,34 @@ function errorMessageEmail() {
   message.innerText = 'ERROR: Invalid email, must be in all lowercase.';
 }
 
+const nameForm = document.getElementById('name');
+const emailForm = document.getElementById('email');
+const textarea = document.getElementById('text-area');
+
+let forminfo = { nameForm: '', emailForm: '', textarea: '' };
+
+const getUserInfo = () => {
+  if (localStorage.getItem('forminfo')) {
+    forminfo = JSON.parse(localStorage.getItem('forminfo'));
+  }
+  return forminfo;
+};
+
+window.onload = () => {
+  nameForm.value = getUserInfo().nameForm;
+  emailForm.value = getUserInfo().emailForm;
+  textarea.value = getUserInfo().textarea;
+};
+
+form.addEventListener('change', () => {
+  forminfo = {
+    nameForm: nameForm.value,
+    emailForm: emailForm.value,
+    textarea: textarea.value,
+  };
+  localStorage.setItem('forminfo', JSON.stringify(forminfo));
+});
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
