@@ -133,13 +133,10 @@ for (let i = 0; i < openWorks.length; i += 1) {
     });
 
     const img = document.querySelector('.popup-image');
-    window.addEventListener('resize', () => {
-      if (window.screen.width >= 768) {
-        img.src = myWorks[i].imagePopupDesktop;
-      } else {
-        img.src = myWorks[i].imagePopup;
-      }
-    });
+  
+    if (window.screen.width >= 768) {
+      img.src = myWorks[i].imagePopupDesktop;
+    };
   });
 }
 
