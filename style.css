@@ -155,7 +155,7 @@ nav li a {
   transition: transform 0.5s;
 }
 
-.individual-works-image{
+.individual-works-image {
   height: 55%;
   width: 90%;
 }
@@ -255,7 +255,7 @@ nav li a {
   line-height: 25px;
 }
 
-.popup-image{
+.popup-image {
   max-height: 30em;
   width: 100%;
 }
