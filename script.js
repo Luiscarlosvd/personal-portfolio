@@ -19,13 +19,15 @@ btn.addEventListener('click', display);
 
 const myWorks = [
   {
-    Name: 'Multi-Post Stories Gain+Glory',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s`,
-    image: './img/portfolio-image.png',
-    technologies: '<li>Ruby on Rails</li>\n<li>JavaScript</li>\n<li>CSS</li>\n<li>HTML</li>',
-    linkLive: '#',
-    linkSource: '#',
+    Name: 'Cookie Masters Capstone Project',
+    description: `Web page project designed around an international cookie course. 
+    Contains content from the main show, about and guests sections and more information.`,
+    image: './img/cookie-masters-mobile-1.png',
+    imagePopup: './img/cookie-masters-mobile.png',
+    imagePopupDesktop: './img/cookie-masters-desktop.png',
+    technologies: '<li>JavaScript</li>\n<li>CSS</li>\n<li>HTML</li>',
+    linkLive: 'https://luiscarlosvd.github.io/capstone-project-cookiemasters/',
+    linkSource: 'https://github.com/Luiscarlosvd/capstone-project-cookiemasters',
   },
   {
     Name: 'Project of whales in alaska',
@@ -87,6 +89,7 @@ const card = document.getElementById('card-works');
 myWorks.forEach((x) => {
   card.innerHTML += `
         <li class="individual-works">
+            <img src="${x.image}" class="individual-works-image">
             <div class="description-works">
                 <h3>${x.Name}</h3>
                 <ul class="work-languages">${x.technologies}</ul>
@@ -111,7 +114,7 @@ for (let i = 0; i < openWorks.length; i += 1) {
                     <div class="button-quit">
                         <button class="quit-button-works" alt="quit button" id="quit-button"><img src="./img/quit-works.png" alt="quit button image"></button>
                     </div>
-                    <img src="${myWorks[i].image}" alt="Image of the portfolio project">
+                    <img src="${myWorks[i].imagePopup}" class="popup-image" alt="Image of the portfolio project">
                     <h1>${myWorks[i].Name}</h1>
                     <ul class="work-languages">${myWorks[i].technologies}</ul>
                     <p class="paragraphs">${myWorks[i].description}</p>
@@ -128,7 +131,20 @@ for (let i = 0; i < openWorks.length; i += 1) {
       body.classList.remove('overflowH');
       workspopup.innerHTML = '';
     });
+
+    const img = document.querySelector('.popup-image')
+    window.addEventListener("resize", () => {
+      if(window.screen.width >= 768){
+        img.src = myWorks[i].imagePopupDesktop;
+      }else{
+        img.src = myWorks[i].imagePopup;
+      }
+    });
+
+    
+    
   });
+  
 }
 
 function validateEmail(email) {
